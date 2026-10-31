@@ -60,8 +60,6 @@ macOS:
   time-stretch/pitch tools are expected not to work;
   Phase Swapper and Matchering are unavailable. ONNX Runtime uses the CPU only; Apple-GPU (MPS) behaviour depends on the model.
 - Gatekeeper blocks the first start until you choose *Open Anyway* (see the macOS guide).
-- The quantized Demucs models are refused before the run starts on Windows; in this macOS build,
-  one set as a *secondary* model is refused only after the main model has finished.
 
 ### Licenses
 
@@ -138,7 +136,6 @@ macOS：
 - 只支援 Apple Silicon；這個確切的版本尚未在 Mac 上執行過。MP3 輸出與變速、變調工具預期無法使用；Phase Swapper 與 Matchering 無法使用。
   ONNX Runtime 只用 CPU；Apple GPU（MPS）的表現依模型而定。
 - 第一次開啟會被 Gatekeeper 攔下，需選「強制打開」（見 macOS 說明）。
-- 量化 Demucs 模型在 Windows 版會於開始前拒絕；在這個 macOS 版本中，若設為「次要模型」，要等主要模型處理完才會停止並說明原因。
 
 ### 授權
 
