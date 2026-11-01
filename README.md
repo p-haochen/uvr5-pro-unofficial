@@ -19,14 +19,21 @@ repository does not contain the program source code.
 > UVR5 Pro exists because of the work of the Ultimate Vocal Remover project.
 
 UVR5 Pro is based on [Ultimate Vocal Remover GUI](https://github.com/Anjok07/ultimatevocalremovergui)
-v5.6.1. Its interface, separation engines and model support all come from the original project.
-Special thanks to its core developers, [Anjok07](https://github.com/Anjok07) and
+v5.6.1. Special thanks to its core developers, [Anjok07](https://github.com/Anjok07) and
 [aufr33](https://github.com/aufr33), and to everyone who has contributed to the original
-application, to model training and to audio source separation research. The models UVR can use
-come from many different authors and projects, not from a single team.
+application, to model training and to audio source separation research.
 
-- **What UVR5 Pro adds:** the *Smart Separation* window, a guided workflow that recommends models
-  for a chosen source, goal and priority. Everything else is the work of the original project.
+- **From the original project and its research community:** the UVR interface, the separation
+  engines, and the model architectures and research behind them (VR Architecture, MDX-Net,
+  Demucs, MDX23C and others). Each belongs to its original authors and researchers, as credited
+  in the official UVR README. The models UVR can use come from many different authors and
+  projects, not from a single team.
+- **Added in UVR5 Pro:** the *Smart Separation* guided workflow (model recommendations with the
+  reasons behind them, and model downloads from each model's original source on request);
+  first-start Model Store setup that can reuse an existing model folder; checks that refuse
+  unavailable models and features before a run starts; collision-safe output naming; shorter
+  startup times; file integrity checks; and self-contained Windows and macOS packages. UVR5 Pro
+  does not change or reinvent the original separation algorithms.
 - **Independent and unofficial:** UVR5 Pro is maintained independently and is not endorsed by the
   original authors.
 - **Original project:** <https://github.com/Anjok07/ultimatevocalremovergui>
