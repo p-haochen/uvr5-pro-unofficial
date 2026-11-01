@@ -14,6 +14,25 @@ This repository contains only documentation. The programs and their SHA-256 chec
 (`SHA256SUMS.txt`) are attached to the [v1.0.0 release](../../releases/tag/v1.0.0); this
 repository does not contain the program source code.
 
+## Original Project & Acknowledgements
+
+> UVR5 Pro exists because of the work of the Ultimate Vocal Remover project.
+
+UVR5 Pro is based on [Ultimate Vocal Remover GUI](https://github.com/Anjok07/ultimatevocalremovergui)
+v5.6.1. Its interface, separation engines and model support all come from the original project.
+Special thanks to its core developers, [Anjok07](https://github.com/Anjok07) and
+[aufr33](https://github.com/aufr33), and to everyone who has contributed to the original
+application, to model training and to audio source separation research. The models UVR can use
+come from many different authors and projects, not from a single team.
+
+- **What UVR5 Pro adds:** the *Smart Separation* window, a guided workflow that recommends models
+  for a chosen source, goal and priority. Everything else is the work of the original project.
+- **Independent and unofficial:** UVR5 Pro is maintained independently and is not endorsed by the
+  original authors.
+- **Original project:** <https://github.com/Anjok07/ultimatevocalremovergui>
+- **[Support the Original Project](https://www.buymeacoffee.com/uvr5)** (the official UVR donation
+  link)
+
 ## Downloads
 
 | Platform | Release assets | Notes |

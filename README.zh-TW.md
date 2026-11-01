@@ -12,6 +12,22 @@ UVR5 Pro 免費提供，依「現狀」提供，不附任何形式的保證。
 本儲存庫只有說明文件。程式與其 SHA-256 檢查碼（`SHA256SUMS.txt`）放在
 [v1.0.0 Release](../../releases/tag/v1.0.0) 的附件中；本儲存庫不包含程式原始碼。
 
+## 原始專案與致謝
+
+> 沒有 Ultimate Vocal Remover 專案的心血，就沒有 UVR5 Pro。
+
+UVR5 Pro 以 [Ultimate Vocal Remover GUI](https://github.com/Anjok07/ultimatevocalremovergui)
+v5.6.1 為基礎，介面、分離引擎與模型支援都來自原始專案。
+特別感謝原版的核心開發者 [Anjok07](https://github.com/Anjok07) 與 [aufr33](https://github.com/aufr33)，
+以及所有參與原版開發、模型訓練與音訊分離研究的貢獻者。
+UVR 可使用的模型來自許多不同的作者與專案，並非全部出自同一個團隊。
+
+- **UVR5 Pro 新增的部分：**「Smart Separation（智慧分離）」視窗，依你選擇的音源、目標與偏好
+  引導推薦模型。其餘部分都是原始專案的成果。
+- **獨立維護的非官方版本：** UVR5 Pro 由個人獨立維護，未經原作者的官方背書。
+- **原始專案：** <https://github.com/Anjok07/ultimatevocalremovergui>
+- **[支持原始專案（Support the Original Project）](https://www.buymeacoffee.com/uvr5)**（UVR 官方提供的贊助連結）
+
 ## 下載
 
 | 平台 | Release 附件 | 說明 |
