@@ -6,17 +6,11 @@
 
 ### 1. Download
 
-The Windows program is published in two forms with **exactly the same files inside**
-(16,177 files, checked file by file with SHA-256). Choose one.
+The Windows program is a single file. Download these two files from the v1.0.0 release into
+the same folder:
 
-- **Recommended — one file:** `UVR5Pro_1.0.0_Windows_x64_Portable.7z` (1,481,107,038 bytes, about 1.4 GiB), plus
-  `SHA256SUMS.txt`.
-- **Alternative — two-part ZIP:** `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` and
-  `.zip.002` (about 2.9 GB together), plus `SHA256SUMS.txt`. GitHub limits each release file
-  to 2 GiB, so this ZIP is split in two. These are the original v1.0.0 files and their
-  checksums are unchanged; see [Two-part ZIP](#two-part-zip-alternative) below.
-
-Download the files into the same folder.
+- `UVR5Pro_1.0.0_Windows_x64_Portable.7z` (1,481,107,038 bytes, about 1.4 GiB)
+- `SHA256SUMS.txt`
 
 ### 2. Check the download
 
@@ -45,51 +39,10 @@ paths can make extraction fail. Use either tool:
 - **7-Zip (free, <https://www.7-zip.org/>):** right-click the `.7z` file → 7-Zip →
   *Extract files…*, and extract to `C:\UVR5Pro\`.
 
-Windows 10 and older Windows 11 versions cannot open `.7z` files without 7-Zip; there, use
-7-Zip or the two-part ZIP.
+Windows 10 and older Windows 11 versions cannot open `.7z` files without extra software;
+there, use 7-Zip.
 
 You get the folder `UVR5Pro_1.0.0_Windows_x64_Portable` (about 5.3 GB).
-
-### Two-part ZIP (alternative)
-
-The two parts are simply the first and second half of one ZIP file. First check both parts:
-
-```powershell
-Get-FileHash .\UVR5Pro_1.0.0_Windows_x64_Portable.zip.00* -Algorithm SHA256
-```
-
-Each hash must match its line in `SHA256SUMS.txt`. Do not continue if any hash differs;
-download that part again. Then use either method.
-
-**Method A — 7-Zip (free, <https://www.7-zip.org/>):** right-click
-`UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` → 7-Zip → *Extract files…*, and extract to
-a short path such as `C:\UVR5Pro\`. 7-Zip reads `.zip.002` automatically.
-
-**Method B — no extra software:** open **Command Prompt** (press Win+R, type `cmd`, press
-Enter), go to the download folder with `cd /d "<download folder>"`, and run:
-
-```bat
-copy /b UVR5Pro_1.0.0_Windows_x64_Portable.zip.001 + UVR5Pro_1.0.0_Windows_x64_Portable.zip.002 UVR5Pro_1.0.0_Windows_x64_Portable.zip
-```
-
-This command does not work as typed in PowerShell or Windows Terminal's PowerShell tab;
-there, put `cmd /c ` in front of it.
-
-Check the joined file:
-
-```powershell
-Get-FileHash .\UVR5Pro_1.0.0_Windows_x64_Portable.zip -Algorithm SHA256
-```
-
-It must match the `UVR5Pro_1.0.0_Windows_x64_Portable.zip` line in `SHA256SUMS.txt`. Then
-right-click the ZIP → *Extract All…* and choose a short path such as `C:\UVR5Pro\`.
-
-Use a short destination path: some files are nested deeply, and very long paths can make
-Windows' built-in extraction fail.
-
-If the joined ZIP's *Properties* window shows an **Unblock** checkbox, you may tick it before
-extracting (only after the hash check passed). Otherwise the first start can take noticeably
-longer while Windows scans the files; later starts are not affected.
 
 ### 4. Start
 
@@ -124,15 +77,10 @@ you select only when you ask it to.
 
 ### 1. 下載
 
-Windows 版提供兩種下載方式，**內含的檔案完全相同**（16,177 個檔案，已用 SHA-256 逐檔比對）。擇一即可。
+Windows 版是單一檔案。請從 v1.0.0 Release 把下面兩個檔案下載到同一個資料夾：
 
-- **推薦：單一檔案** `UVR5Pro_1.0.0_Windows_x64_Portable.7z`（1,481,107,038 位元組，約 1.4 GiB），以及 `SHA256SUMS.txt`。
-- **替代：分成兩卷的 ZIP** `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` 與 `.zip.002`
-  （合計約 2.9 GB），以及 `SHA256SUMS.txt`。GitHub 限制每個 Release 檔案不得超過 2 GiB，
-  所以這個 ZIP 分成兩個檔案。它們就是原本 v1.0.0 的檔案，檢查碼沒有改變；見下方
-  [分卷 ZIP](#分卷-zip替代方式)。
-
-請把檔案下載到同一個資料夾。
+- `UVR5Pro_1.0.0_Windows_x64_Portable.7z`（1,481,107,038 位元組，約 1.4 GiB）
+- `SHA256SUMS.txt`
 
 ### 2. 核對下載檔
 
@@ -158,48 +106,9 @@ Get-FileHash .\UVR5Pro_1.0.0_Windows_x64_Portable.7z -Algorithm SHA256
 - **7-Zip（免費，<https://www.7-zip.org/>）：** 在 `.7z` 檔上按右鍵 → 7-Zip →「解壓縮檔案…」，
   解壓到 `C:\UVR5Pro\`。
 
-Windows 10 與較舊的 Windows 11 版本不安裝 7-Zip 就無法開啟 `.7z`，請改用 7-Zip 或分卷 ZIP。
+Windows 10 與較舊的 Windows 11 版本需要另外安裝軟體才能開啟 `.7z`，請使用 7-Zip。
 
 解壓後會得到 `UVR5Pro_1.0.0_Windows_x64_Portable` 資料夾（約 5.3 GB）。
-
-### 分卷 ZIP（替代方式）
-
-兩個檔案就是同一個 ZIP 的前半與後半。請先核對兩個檔案：
-
-```powershell
-Get-FileHash .\UVR5Pro_1.0.0_Windows_x64_Portable.zip.00* -Algorithm SHA256
-```
-
-每個雜湊值都必須與 `SHA256SUMS.txt` 中對應的一行相同。任何一個不同就不要繼續，請重新下載該檔案。
-接著以下兩種方式擇一即可。
-
-**方式 A — 7-Zip（免費，<https://www.7-zip.org/>）：** 在
-`UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` 上按右鍵 → 7-Zip →「解壓縮檔案…」，
-解壓到短路徑，例如 `C:\UVR5Pro\`。7-Zip 會自動讀取 `.zip.002`。
-
-**方式 B — 不安裝其他軟體：** 開啟「**命令提示字元**」（按 Win+R，輸入 `cmd` 後按 Enter），
-以 `cd /d "<下載資料夾>"` 切換到下載資料夾，然後執行：
-
-```bat
-copy /b UVR5Pro_1.0.0_Windows_x64_Portable.zip.001 + UVR5Pro_1.0.0_Windows_x64_Portable.zip.002 UVR5Pro_1.0.0_Windows_x64_Portable.zip
-```
-
-這行指令不能直接在 PowerShell（或 Windows 終端機的 PowerShell 分頁）中執行；
-在 PowerShell 中請在前面加上 `cmd /c `。
-
-核對合併後的檔案：
-
-```powershell
-Get-FileHash .\UVR5Pro_1.0.0_Windows_x64_Portable.zip -Algorithm SHA256
-```
-
-結果必須與 `SHA256SUMS.txt` 中 `UVR5Pro_1.0.0_Windows_x64_Portable.zip` 那一行相同。
-接著在 ZIP 上按右鍵 →「解壓縮全部…」，選擇短路徑，例如 `C:\UVR5Pro\`。
-
-請使用短的目的地路徑：部分檔案的路徑很深，路徑過長時 Windows 內建的解壓可能失敗。
-
-若合併後 ZIP 的「內容」視窗有「解除封鎖」核取方塊，可在雜湊核對通過後勾選再解壓；
-否則第一次啟動時 Windows 會花較久時間掃描檔案，之後的啟動不受影響。
 
 ### 4. 啟動
 

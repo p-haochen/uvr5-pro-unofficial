@@ -12,11 +12,8 @@ warranty.
 
 | Platform | Assets | Signing |
 | --- | --- | --- |
-| Windows 11 x64, portable (Windows 10 not tested) | `UVR5Pro_1.0.0_Windows_x64_Portable.7z` (recommended, one file), or `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` + `.zip.002` | Not digitally signed |
+| Windows 11 x64, portable (Windows 10 not tested) | `UVR5Pro_1.0.0_Windows_x64_Portable.7z` (one file, about 1.4 GiB) | Not digitally signed |
 | macOS, Apple Silicon | `UVR5Pro_1.0.0_macOS_arm64.zip` | Ad-hoc signature only; no Developer ID; not notarized |
-
-Both Windows downloads contain exactly the same files. The single `.7z` file (1,481,107,038 bytes, about 1.4 GiB) was
-added on 2026-11-05; the two ZIP parts are the original files with unchanged checksums.
 
 SHA-256 checksums of all assets are in `SHA256SUMS.txt`. Setup guides:
 [Windows](docs/INSTALL_WINDOWS.md), [macOS](docs/INSTALL_MACOS.md).
@@ -98,11 +95,8 @@ UVR5 Pro 1.0.0 是 Ultimate Vocal Remover GUI v5.6.1 的**非官方**建置，�
 
 | 平台 | 附件 | 簽章 |
 | --- | --- | --- |
-| Windows 11 x64（免安裝版；Windows 10 尚未測試） | `UVR5Pro_1.0.0_Windows_x64_Portable.7z`（推薦，單一檔案），或 `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` ＋ `.zip.002` | 沒有數位簽章 |
+| Windows 11 x64（免安裝版；Windows 10 尚未測試） | `UVR5Pro_1.0.0_Windows_x64_Portable.7z`（單一檔案，約 1.4 GiB） | 沒有數位簽章 |
 | macOS（Apple Silicon） | `UVR5Pro_1.0.0_macOS_arm64.zip` | 只有 ad-hoc 簽章；沒有 Developer ID；未經 Apple 公證 |
-
-兩種 Windows 下載的內容檔案完全相同。單一 `.7z` 檔（1,481,107,038 位元組，約 1.4 GiB）於 2026-11-05 新增；
-兩個 ZIP 分卷就是原本的檔案，檢查碼沒有改變。
 
 所有附件的 SHA-256 檢查碼在 `SHA256SUMS.txt`。安裝說明：
 [Windows](docs/INSTALL_WINDOWS.md)、[macOS](docs/INSTALL_MACOS.md)。
