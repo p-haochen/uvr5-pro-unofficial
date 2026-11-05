@@ -44,9 +44,13 @@ application, to model training and to audio source separation research.
 
 | Platform | Release assets | Notes |
 | --- | --- | --- |
-| Windows x64 | `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` + `.zip.002` | Two parts of one ZIP; download **both**. See [Windows guide](docs/INSTALL_WINDOWS.md). |
+| Windows x64 (recommended) | `UVR5Pro_1.0.0_Windows_x64_Portable.7z` | One file (1,481,107,038 bytes, about 1.4 GiB). See [Windows guide](docs/INSTALL_WINDOWS.md). |
+| Windows x64 (alternative) | `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` + `.zip.002` | The same program as a ZIP in two parts; download **both**. |
 | macOS on Apple Silicon | `UVR5Pro_1.0.0_macOS_arm64.zip` | Not notarized. See [macOS guide](docs/INSTALL_MACOS.md). |
 | Checksums | `SHA256SUMS.txt` | SHA-256 of every release asset and of the joined Windows ZIP. |
+
+Both Windows downloads contain exactly the same files (checked file by file with SHA-256). The
+single `.7z` file is smaller because it uses stronger compression.
 | LGPL source code | `libsndfile-1.2.0.tar.xz`, `lame-3.100.tar.gz`, `mpg123-1.29.3.tar.bz2`, `mpg123-1.30.2.tar.bz2` | Source of the LGPL audio libraries bundled in both packages (not needed to run UVR5 Pro). |
 | LGPL build scripts | `lgpl-build-scripts-1.0.0.zip` | The upstream scripts and recipes that built those libraries, with a version map (not needed to run UVR5 Pro). |
 

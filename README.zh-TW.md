@@ -36,9 +36,12 @@ v5.6.1 為基礎。特別感謝原版的核心開發者 [Anjok07](https://github
 
 | 平台 | Release 附件 | 說明 |
 | --- | --- | --- |
-| Windows x64 | `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` ＋ `.zip.002` | 同一個 ZIP 分成兩個檔案，**兩個都要下載**。見 [Windows 說明](docs/INSTALL_WINDOWS.md)。 |
+| Windows x64（推薦） | `UVR5Pro_1.0.0_Windows_x64_Portable.7z` | 單一檔案（1,481,107,038 位元組，約 1.4 GiB）。見 [Windows 說明](docs/INSTALL_WINDOWS.md)。 |
+| Windows x64（替代） | `UVR5Pro_1.0.0_Windows_x64_Portable.zip.001` ＋ `.zip.002` | 同一個程式的 ZIP 分成兩個檔案，**兩個都要下載**。 |
 | macOS（Apple Silicon） | `UVR5Pro_1.0.0_macOS_arm64.zip` | 未經 Apple 公證。見 [macOS 說明](docs/INSTALL_MACOS.md)。 |
 | 檢查碼 | `SHA256SUMS.txt` | 每個 Release 附件，以及合併後 Windows ZIP 的 SHA-256。 |
+
+兩種 Windows 下載的內容檔案完全相同（已用 SHA-256 逐檔比對）；單一 `.7z` 檔因為壓縮率較高而比較小。
 | LGPL 原始碼 | `libsndfile-1.2.0.tar.xz`、`lame-3.100.tar.gz`、`mpg123-1.29.3.tar.bz2`、`mpg123-1.30.2.tar.bz2` | 兩個平台內附的 LGPL 音訊函式庫原始碼（執行 UVR5 Pro 不需要）。 |
 | LGPL 建置腳本 | `lgpl-build-scripts-1.0.0.zip` | 上游當時建置這些函式庫所用的腳本與 vcpkg port 檔，附版本對應說明（執行 UVR5 Pro 不需要）。 |
 
